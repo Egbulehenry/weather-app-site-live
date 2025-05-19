@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+   <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="time-display" id="currentTime"></div>
+    <div class="app-wrapper">
+        <div class="weather-left">
+            <div class="weather-box">
+                <img src="https://img.icons8.com/color/96/000000/sun.png" alt="Clear Icon" class="weather-decoration">
+                <span>Clear</span>
+            </div>
+            <div class="weather-box">
+                <img src="https://img.icons8.com/color/96/000000/partly-cloudy-day.png" alt="Clouds Icon" class="weather-decoration">
+                <span>Clouds</span>
+            </div>
+            <div class="weather-box">
+                <img src="https://img.icons8.com/color/96/000000/rain.png" alt="Rain Icon" class="weather-decoration">
+                <span>Rain</span>
+            </div>
+            <div class="weather-box">
+                <img src="https://img.icons8.com/color/96/000000/light-rain.png" alt="Drizzle Icon" class="weather-decoration">
+                <span>Drizzle</span>
+            </div>
+        </div>
+        <div class="weather-right">
+            <div class="weather-box">
+                <img src="https://img.icons8.com/color/96/000000/storm.png" alt="Thunderstorm Icon" class="weather-decoration">
+                <span>Thunder</span>
+            </div>
+            <div class="weather-box">
+                <img src="https://img.icons8.com/color/96/000000/snow.png" alt="Snow Icon" class="weather-decoration">
+                <span>Snow</span>
+            </div>
+            <div class="weather-box">
+                <img src="https://img.icons8.com/color/96/000000/fog-day.png" alt="Mist Icon" class="weather-decoration">
+                <span>Mist</span>
+            </div>
+            <div class="weather-box">
+                <img src="https://img.icons8.com/color/96/000000/wind.png" alt="Wind Icon" class="weather-decoration">
+                <span>Wind</span>
+            </div>
+        </div>
+        <header>
+            <h1>Weather Checker</h1>
+            <p>Find out the weather in any city!</p>
+        </header>
+        <main>
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city name" aria-label="City name">
+                <button id="getWeatherBtn">Search</button>
+            </div>
+            <div id="hourlyForecast" class="hourly-forecast">
+                <h2>Hourly Forecast</h2>
+                <div class="forecast-container" id="forecastContainer">
+                    <!-- Hourly forecast items will be added here via JS -->
+                </div>
+            </div>
+            <div id="weatherResult" class="weather-card">
+                <!-- Weather data with icons and flag will appear here -->
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
